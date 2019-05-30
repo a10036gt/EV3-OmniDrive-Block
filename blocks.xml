@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorDefinitions>
+  <PolyGroups ModuleName="4WheelOmni" ModuleVersion="1.1 (By OFDL Dev.)">
+	<PolyGroup Name="4WheelOmni" BlockFamily="Action">
+      <Parameter Name="Angle" Identification="Identification_DEG.png" DataType="Int32" Direction="Input" DefaultValue="0" />
+      <Parameter Name="Power" Identification="Identification_PWR.png" DataType="Int32" Direction="Input" DefaultValue="100" />
+	  <Parameter Name="ADD" Identification="Identification_ADD.png" DataType="Int32" Direction="Input" DefaultValue="0" />
+      <Block>
+        <Mode>FindBall</Mode>
+        <Reference Type="VILib" Name="FindBall4WD.vix" />
+        <ParameterReference Name="Angle" />
+		<ParameterReference Name="ADD" />
+        <ParameterReference Name="Power" />
+        <PaletteInfo Weight="0.5" />
+      </Block>
+      <Block>
+        <Mode>FindBallMR</Mode>
+        <Reference Type="VILib" Name="FindBallMR.vix" />
+        <ParameterReference Name="Angle" />
+		<ParameterReference Name="ADD" />
+        <ParameterReference Name="Power" />
+      </Block>
+    </PolyGroup>
+  </PolyGroups>
+</EditorDefinitions>

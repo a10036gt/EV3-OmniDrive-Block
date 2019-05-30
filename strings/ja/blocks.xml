@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<EditorStrings>
+  <PolyGroups ModuleName="4WheelOmni">
+	<PolyGroup Name="4WheelOmni" DisplayName="4 Omni Wheel Drive" DisplayNamePrefix="4WheelOmni">
+      <Parameter Name="Angle" DisplayName="Angle" >
+        <Description><![CDATA[<p>Context help for Angle</p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Power" DisplayName="Power" >
+        <Description><![CDATA[<p>Context help for Power</p>]]></Description>
+      </Parameter>
+	  <Parameter Name="ADD" DisplayName="Rotate" >
+        <Description><![CDATA[<p>Context help for Rotate</p>]]></Description>
+      </Parameter>
+      <Block Mode="FindBall" DisplayName="Drive (Rotate 4WD)">
+        <Description><![CDATA[<p>Context help for FindBall</p>]]></Description>
+      </Block>
+      <Block Mode="FindBallMR" DisplayName="Drive (Rotate Only BC Motor)">
+        <Description><![CDATA[<p>Context help for FindBallMR</p>]]></Description>
+      </Block> 
+    </PolyGroup>
+  </PolyGroups>
+</EditorStrings>
