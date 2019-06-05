@@ -8,15 +8,18 @@
 	  <Parameter Name="Power" DisplayName="Power" >
         <Description><![CDATA[<p>Context help for Power</p>]]></Description>
       </Parameter>
-	  <Parameter Name="ADD" DisplayName="Rotate" >
-        <Description><![CDATA[<p>Context help for Rotate</p>]]></Description>
+	  <Parameter Name="HT Compass RelHeading" DisplayName="HT Compass RelHeading" >
+        <Description><![CDATA[<p>Context help for HT Compass RelHeading</p>]]></Description>
+      </Parameter>
+	  <Parameter Name="Error Correction Kp" DisplayName="Error Correction Kp" >
+        <Description><![CDATA[<p>Context help for Error Correction Kp</p>]]></Description>
       </Parameter>
       <Block Mode="FindBall" DisplayName="Drive (Rotate 4WD)">
         <Description><![CDATA[<p>Context help for FindBall</p>]]></Description>
       </Block>
-      <Block Mode="FindBallMR" DisplayName="Drive (Rotate Only BC Motor)">
-        <Description><![CDATA[<p>Context help for FindBallMR</p>]]></Description>
-      </Block> 
+	  <Block Mode="FindBallMR" DisplayName="Drive (Rotate Only BC Motor)">
+        <Description><![CDATA[<p>Context help for FindBall</p>]]></Description>
+      </Block>
     </PolyGroup>
   </PolyGroups>
 </EditorStrings>

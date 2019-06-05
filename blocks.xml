@@ -1,24 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <EditorDefinitions>
-  <PolyGroups ModuleName="4WheelOmni" ModuleVersion="1.1 (By OFDL Dev.)">
+  <PolyGroups ModuleName="4WheelOmni" ModuleVersion="1.2 (By OFDL Dev.)">
 	<PolyGroup Name="4WheelOmni" BlockFamily="Action">
-      <Parameter Name="Angle" Identification="Identification_DEG.png" DataType="Int32" Direction="Input" DefaultValue="0" />
-      <Parameter Name="Power" Identification="Identification_PWR.png" DataType="Int32" Direction="Input" DefaultValue="100" />
-	  <Parameter Name="ADD" Identification="Identification_ADD.png" DataType="Int32" Direction="Input" DefaultValue="0" />
+      <Parameter Name="Angle" Identification="Identification_DEG.png" DataType="Single" Direction="Input" DefaultValue="0" MinValue="-180" MaxValue="180"/>
+      <Parameter Name="Power" Identification="Identification_PWR.png" DataType="Single" Direction="Input" DefaultValue="100" MinValue="0" MaxValue="100" />
+	  <Parameter Name="HT Compass RelHeading" Identification="Identification_HT_Compass_RelHeading.png" DataType="Int32" Direction="Input" DefaultValue="0" MinValue="-180" MaxValue="180" />
+	  <Parameter Name="Error Correction Kp" Identification="Identification_Error_Correction_Kp.png" DataType="Single" Direction="Input" DefaultValue="0.01" MinValue="-0.1" MaxValue="0.1" />
       <Block>
         <Mode>FindBall</Mode>
         <Reference Type="VILib" Name="FindBall4WD.vix" />
         <ParameterReference Name="Angle" />
-		<ParameterReference Name="ADD" />
-        <ParameterReference Name="Power" />
+		<ParameterReference Name="Power" />
+        <ParameterReference Name="HT Compass RelHeading" />
+		<ParameterReference Name="Error Correction Kp" />
         <PaletteInfo Weight="0.5" />
       </Block>
-      <Block>
+	  <Block>
         <Mode>FindBallMR</Mode>
         <Reference Type="VILib" Name="FindBallMR.vix" />
         <ParameterReference Name="Angle" />
-		<ParameterReference Name="ADD" />
-        <ParameterReference Name="Power" />
+		<ParameterReference Name="Power" />
+        <ParameterReference Name="HT Compass RelHeading" />
+		<ParameterReference Name="Error Correction Kp" />
       </Block>
     </PolyGroup>
   </PolyGroups>
